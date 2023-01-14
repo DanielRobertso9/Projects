@@ -1,0 +1,300 @@
+<header>
+    <div class="header-container">
+      <nav class="header-links-container">
+        <h3>Explore Map</h3>
+        <h3>Public Meets</h3>
+        <h3>Bookmarked</h3>
+        <h3>Deals</h3>
+      </nav>
+      <div class="logo">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPsAAADJCAMAAADSHrQyAAAAclBMVEX///8AAADr6+v8/Pzz8/NsbGz6+vrg4ODj4+Pd3d06OjpmZmZdXV3u7u4rKyudnZ14eHhNTU2IiIjU1NS7u7uUlJRGRkampqY1NTXGxsZYWFjOzs4TExOTk5NRUVF0dHSkpKSysrIREREdHR2FhYUbGxvb9QZzAAAD70lEQVR4nO3b6XqqMBCAYQNo3XBDca1abe//Fo9hk4SlmybQ872/rD7SDJBkZmg7HQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAX+bsbI/AnqEY2x6CLTMhxMn2IOw4C+nd9jBsCERsansg5jki9WZ7KMaFWexia3sshnVFzt72aIxaC8WL7fEYtBcax/aIjPH10MXEsz0mUzZCXPtzNXjX9qCeL5guZrclfuJ3vA8l+KPtkT3dNg50Lq9yX73t/3pdk6xxYzf/U2pmeXDPtdeCHKrBL2yO7TGcoOKDQA9xqq32ZxPDeyb/QyxLP0hCz9Uu2oxvfWrvbiou4KAkvFAPvtWpvRtv28WWxKAsuDc99lan9uN0x+qp77/Eb2tLwboQu+ibG+uDneTw5V0vJkqKHs/sgxZYSeji0tbU/l2OvttZ6Ne4f4nOiRZWWehCfGh3TEus4tDTzStb7uMeTagFpe9wqWEbg4+u4+j+UrzG7zvXaAXQqpWq0G8Zr+FxP8DyHnq6gkfLvX9Ib4e8VWXo94O0RlSm3J81xMHPex1/Il/o+epLTeitS+0DNfT0uk4GUeiFRvSoNvZ2pfbRdcyVoZ4SSiFXHdSH3qquvXNRQ1enczG/71aEXDxdblheHTSGJ2/sfOfFzYdRrOvqZ3ssyX7n2XbRPK7rBFtZk8zze1huA7sMil+KZ/vhWBt8dMp28tW4eTu+090Ns6abuinvsgiufvGL0Wy/rt2OV73Ji6hrn5QHk6Zl+dGNngrVzCUrTodlzWc526fxF3o10V+cU/a6WcWtKztOwzA87saj0UlL2jbJkEu7r7fZPrufkt5r7Z2fatTCL2/rdcVn3iEesJ7MJd8M1SXAn30l+PJjWSGXq8rdJ3nAXJ6e9Yudqf64NuzYsCnVraxWq3ss8R62+sbx9oX2VYmqJqhZt9TlUrP2Rs3oqglRIdh9Fvq3D/kUb3pfpvh59YSoNPj8zrdf5CyLjQjV6w+bjv1CrjvfLpSfQ8sPbIPsqVKVd1GSzH2Jo6z5R3kGfSX6w0+P/BCDz/8qrvuLPMzLQh0NCm9JFh9g+F+orn+Xf3tREXjKnz/l2lsr7r2rOD//t0zf9TLAy6V/R0u1zfAHC/hj5KK3U9scbT41yqX+Fmqb0Y8X8Mfwsn6Q8YbGzP4TI3d1SXYBs5P+9dCEPwVLGx6bkq7I06xDg7+s1vRgeNIvG/RPDkm7x1Rts7VfRyim8imfmYZG8J1q3Ije2VBtU9JsaYDz1UBDw2tGy6Sgt37+pG/ew4HM+X/9XyvJPR+bkHbY8mY93QQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJP4B1p0hkkKERb4AAAAASUVORK5CYII=" id="logo" alt="logo"></img>
+        <h1>
+          Offroad Trail Guides
+        </h1>
+      </div>
+      <div class="social-container">
+        <p> Help </p>
+        <button id="Register">Register</button>
+        <p>Log In</p>
+        <p>&#x1f6d2;Cart (<span id="cart">0</span>)</p>
+      </div>
+  </header>
+  
+  <main class="main-body">
+    <div class="upper-container">
+      <div class="filter-container">
+        <p class="filter"> Difficulty &#x25BC;</p>
+        <p class="filter"> Length &#x25BC;</p>
+        <p class="filter"> Attractions &#x25BC;</p>
+        <p class="filter"> Route Type &#x25BC;</p>
+      </div>
+      <p class="location-container">
+        <input id="location-input" type="text" placeholder="Enter City, Park or Trail name " />
+        <button id="location-btn">&#x1F50E;&#xFE0E;</button>
+      </p>
+    </div>
+    <section class="trails-body">
+      <div class="trails-container">
+        <div class="slideshow-container" id="mesa">
+          <div class="slide1">
+            <img src="https://www.alltrails.com/api/alltrails/trails/10032796/profile_photo?show_placeholder=no&show_static_map=yes&size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i" class="trail-img" alt="img1">
+          </div>
+  
+          <div class="slide1">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQ2NjgyMDgvMGI3ZjgzZTFhYWViODZkMzNlOGI4NzNlNDIxNWIxNTEuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img2">
+          </div>
+  
+          <div class="slide1">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQ2Njg0MjEvMTA0OWQxN2QzODcxOWE4ODQ0MzZjYWE0YmExMjdkYzcuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img3">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <h3> Mesa Arch Trail </h3>
+        <p> Canyonlands National Park </p>
+        <p> Length: 0.7 mi - Est. 17m </p>
+        <p> Difficulty:<span class="easy"> Easy </span></p>
+        <button class="trail-btn" id="mesa-btn" onclick="addToCart()">Add to Cart</button>
+      </div>
+  
+      <div class="trails-container">
+        <div class="slideshow-container">
+          <div class="slide2">
+            <img src="https://www.alltrails.com/api/alltrails/trails/10018277/profile_photo?show_placeholder=no&show_static_map=yes&size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i" class="trail-img" alt="img1">
+          </div>
+          <div class="slide2">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQ1MjY4MjIvNjg4Y2FiZjQ1Njk1NGM4YzM4MzQ4NTNlMTIwMjM5MjQuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img2">
+          </div>
+          <div class="slide2">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQ1MjY4MjcvZDNkYjM5ZDA1NDhkYzk0MDhiYWIxYzIxNmQ3ZWI3MDAuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img3">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+        <h3> Aztec Butte Trail </h3>
+        <p> Canyonlands National Park </p>
+        <p> Length: 1.6 mi - Est. 43m </p>
+        <p> Difficulty:<span class="moderate"> Moderate </span></p>
+        <button class="trail-btn" id="aztec-btn" onclick="addToCart()"> Add to Cart</button>
+      </div>
+  
+      <div class="trails-container">
+        <div class="slideshow-container">
+          <div class="slide3">
+            <img src="https://www.alltrails.com/api/alltrails/trails/10033862/profile_photo?show_placeholder=no&show_static_map=yes&size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i" class="trail-img" alt="img1">
+          </div>
+          <div class="slide3">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTM5MjMyNzEvZGJkY2RjZGEwMGFkMWY3ZDkyZTUzYTNlMzgzMDkxYjYuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img2">
+          </div>
+          <div class="slide3">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTM5MjMyNzQvODkyZTYwMjg4MDA1NzM2ZmIwZGU3NTU0MTNiOGUzYWIuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img3">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+        </div>
+        <h3> Fins & Things OHV Trail </h3>
+        <p> Sand Flats Recreation Area </p>
+        <p> Length: 9.8 mi </p>
+        <p> Difficulty:<span class="moderate"> Moderate </span> </p>
+        <button class="trail-btn" id="fins-btn" onclick="addToCart()"> Add to Cart</button>
+      </div>
+  
+      <div class="trails-container">
+        <div class="slideshow-container">
+          <div class="slide4">
+            <img src="https://www.alltrails.com/api/alltrails/trails/10318801/profile_photo?show_placeholder=no&show_static_map=yes&size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i" class="trail-img" alt="img1">
+          </div>
+          <div class="slide4">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQzODgyNTkvZTk4NjcxOTlhODE0YWQ1YTE3MDY0OWRlOThmYjYyOTUuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img2">
+          </div>
+          <div class="slide4">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQzODgyNTIvYTEyNWFjM2FiMWQyZmY0NDgzYmE2M2U4NzVlZjIyMTcuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img3">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+        </div>
+        <h3> Toquerville Falls </h3>
+        <p> Toquerville, Utah </p>
+        <p> Length: 11.7 mi </p>
+        <p> Difficulty:<span class="moderate"> Moderate </span> </p>
+        <button class="trail-btn" id="toquer-btn" onclick="addToCart()"> Add to Cart</button>
+      </div>
+  
+      <div class="trails-container">
+        <div class="slideshow-container">
+          <div class="slide5">
+            <img src="https://www.alltrails.com/api/alltrails/trails/10036951/profile_photo?show_placeholder=no&show_static_map=yes&size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i" class="trail-img" alt="img1">
+          </div>
+          <div class="slide5">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQ1MjIyNTgvNzZmYjgzMzA5ZTUxNzA0OTkwMTlkYzJlODFmNjg0N2UuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img2">
+          </div>
+          <div class="slide5">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQyMjAxNDAvNDU0NmIxNTFlNWY0ZDY5ZjAwOTdhNDZmZDEwOWExZjkuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img3">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+        </div>
+        <h3> Gemini Bridges OHV Trail </h3>
+        <p> Moab, Utah </p>
+        <p> Length: 13.2 mi </p>
+        <p> Difficulty:<span class="moderate"> Moderate </span> </p>
+        <button class="trail-btn" id="gemini-btn" onclick="addToCart()"> Add to Cart</button>
+      </div>
+  
+      <div class="trails-container">
+        <div class="slideshow-container">
+          <div class="slide6">
+            <img src="https://www.alltrails.com/api/alltrails/trails/10244137/profile_photo?show_placeholder=no&show_static_map=yes&size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i" class="trail-img" alt="img1">
+          </div>
+          <div class="slide6">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQ0MTk4MDUvOWMyZDM4ZjQ2MTM3ODUyMGNmOWJkMDhlYTMyOGViYzAuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img2">
+          </div>
+          <div class="slide6">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQzMjgwNDcvMWNkOGIzYjA3ZGU2NmE1MTJhMDJmNjQ1MWRlZDE4OWMuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img3">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+        </div>
+        <h3> Peek-a-Boo Canyon </h3>
+        <p> Kanab, Utah </p>
+        <p> Length: 8.7 mi </p>
+        <p> Difficulty:<span class="moderate"> Moderate </span> </p>
+        <button class="trail-btn" id="peekaboo-btn" onclick="addToCart()"> Add to Cart</button>
+      </div>
+  
+      <div class="trails-container">
+        <div class="slideshow-container">
+          <div class="slide7">
+            <img src="https://www.alltrails.com/api/alltrails/trails/10042975/profile_photo?show_placeholder=no&show_static_map=yes&size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i" class="trail-img" alt="img1">
+          </div>
+          <div class="slide7">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQwOTg3MDIvOTg2ZTJhOTlhNzZhOTY4NDYyMGZiMDFmYjg2NjViNzkuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img2">
+          </div>
+          <div class="slide7">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTM5MTc4NDUvYjhiNTc1ODM1Y2IxOTE4M2RhMWI0Y2RkZWE3MWI0NTEuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img3">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+        </div>
+        <h3> Hell's Revenge OHV Trail </h3>
+        <p> Sand Flats Recreation Area </p>
+        <p> Length: 9.0 mi </p>
+        <p> Difficulty:<span class="hard"> Hard </span></p>
+        <button class="trail-btn" id="hells-btn" onclick="addToCart()"> Add to Cart</button>
+      </div>
+  
+      <div class="trails-container">
+        <div class="slideshow-container">
+          <div class="slide8">
+            <img src="https://www.alltrails.com/api/alltrails/trails/10260558/profile_photo?show_placeholder=no&show_static_map=yes&size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i" class="trail-img" alt="img1">
+          </div>
+          <div class="slide8">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQ2NjQ4NzYvMmRkNzgyMDk1NzA3ODMyMmE5YTlhNjk1NzQ4MzVkMTIuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img2">
+          </div>
+          <div class="slide8">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQ1Nzk2MjEvZjBiMGVkNmMzZGY1YThmNDJkMmNkZGRhNDA2NzYzYzkuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img3">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
+        </div>
+        <h3> Chicken Corners OHV Trail </h3>
+        <p> Moab, Utah </p>
+        <p> Length: 41.6 mi </p>
+        <p> Difficulty:<span class="moderate"> Moderate </span> </p>
+        <button class="trail-btn" id="chicken-btn" onclick="addToCart()"> Add to Cart</button>
+      </div>
+  
+      <div class="trails-container">
+        <div class="slideshow-container">
+          <div class="slide9">
+            <img src="https://www.alltrails.com/api/alltrails/trails/10039547/profile_photo?show_placeholder=no&show_static_map=yes&size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i" class="trail-img" alt="img1">
+          </div>
+          <div class="slide9">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQ2NTIxODYvZDUyMzgwNGI3NTZjM2E4NTQxNjY1NmNmNTc3ZjBkMzcuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img2">
+          </div>
+          <div class="slide9">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQ2NTIxODQvMTkzMzc3MjI5NTNjYjExZDI3NjY5MTNmZDExZTRlNjguanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img3">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 8)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 8)">&#10095;</a>
+        </div>
+        <h3> Moab Rim Trail </h3>
+        <p> Grand County Trail Systems </p>
+        <p> LengthL 7.7 mi - Est. 4h 10m </p>
+        <p> Difficulty:<span class="hard"> Hard </span></p>
+        <button class="trail-btn" id="moab-rim-btn" onclick="addToCart()"> Add to Cart</button>
+      </div>
+  
+      <div class="trails-container">
+        <div class="slideshow-container">
+          <div class="slide10">
+            <img src="https://www.alltrails.com/api/alltrails/trails/10042979/profile_photo?show_placeholder=no&show_static_map=yes&size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i" class="trail-img" alt="img1">
+          </div>
+          <div class="slide10">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTM5MDYzNjAvMGExOTYyNjk4NDM1NDI3NTA0NDhmNmY2NzY0ODAzOWEuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img2">
+          </div>
+          <div class="slide10">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTM5MDYzNjQvOTlhMmRjOTdiZDJlNzUzZDI2MDMxN2YzMzY1MGNlNzMuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img3">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 9)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 9)">&#10095;</a>
+        </div>
+        <h3> Top of the World Trail </h3>
+        <p> Moab, Utah </p>
+        <p> Length: 18.9 mi - Est. 5h 16m </p>
+        <p> Difficulty:<span class="hard"> Hard </span></p>
+        <button class="trail-btn" id="top-world-btn" onclick="addToCart()"> Add to Cart</button>
+      </div>
+  
+      <div class="trails-container">
+        <div class="slideshow-container">
+          <div class="slide11">
+            <img src="https://www.alltrails.com/api/alltrails/trails/10034935/profile_photo?show_placeholder=no&show_static_map=yes&size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i" class="trail-img" alt="img1">
+          </div>
+          <div class="slide11">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTMzOTcyNTUvMWM3OGJkYmIwNDBkOTg2YzkwMWJjODFjNGQ0NGMzNDYuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img2">
+          </div>
+          <div class="slide11">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTMzOTcyNTQvY2VmNTcxOWNjOWE3NTVhZjZhMGRjMjRhOWRjZGVhMTIuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img3">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 10)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 10)">&#10095;</a>
+        </div>
+        <h3> Poison Spider Mesa </h3>
+        <p> Poison Spider Mesa </p>
+        <p> Length: 13.5 mi - Est. 8h 51m </p>
+        <p> Difficulty:<span class="moderate"> Moderate </span></p>
+        <button class="trail-btn" id="poison-btn" onclick="addToCart()"> Add to Cart</button>
+      </div>
+  
+      <div class="trails-container">
+        <div class="slideshow-container">
+          <div class="slide12">
+            <img src="https://www.alltrails.com/api/alltrails/trails/10033857/profile_photo?show_placeholder=no&show_static_map=yes&size=larger_wide&key=3p0t5s6b5g4g0e8k3c1j3w7y5c3m4t8i" class="trail-img" alt="img1">
+          </div>
+          <div class="slide12">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQzNjkxNzAvYTZhZDg5MDM3NWU3MGUzZmM5NWE5NDI0YTlhODlkNzEuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img2">
+          </div>
+          <div class="slide12">
+            <img src="https://images.alltrails.com/eyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvNTQzNjkxOTkvMGNiNjdlM2Q2ZGM1ZTA1N2UzNjNiYTVhMWNlMWNiNjAuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJqcGVnIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0=" class="trail-img" alt="img3">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 11)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 11)">&#10095;</a>
+        </div>
+        <h3> Hurrah Pass </h3>
+        <p> Moab, Utah </p>
+        <p> Length: 19.3 mi - Est. 7h 34m </p>
+        <p> Difficulty:<span class="moderate"> Moderate </span> </p>
+        <button class="trail-btn" id="hurrah-btn" onclick="addToCart()"> Add to Cart</button>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&#0153 Offroad Trail Services</p>
+    <section class="email-sign-up">
+      <h4>Sign up for Offers</h4>
+      <input id="email" type="text" placeholder="Your Email" />
+      <button id="sign-up">Sign Up</button>
+    </section>
+  </footer>
